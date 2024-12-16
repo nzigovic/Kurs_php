@@ -18,7 +18,18 @@ array_push($products,  "Pc", "Montior", "keyboard");
 
 $prevraranjeUstring = implode("," , $products); // implode se koristi za pretvaranje u string 
 
-echo $prevraranjeUstring;
+echo "$prevraranjeUstring <br>";
+
+
+$prvi_niz =["Bmw", "Audi", "Mercedes"];
+
+$drugi_niz = ["Zastava", "Ford", "Opel"];
+
+$zajedno = $prvi_niz + $drugi_niz;
+
+$pretvoreno = implode("," , $zajedno);
+
+echo $pretvoreno ;
 
 
 
