@@ -22,3 +22,5 @@ $automobili = [
 
 
 echo "Pogledaj automobil marke {$automobili["marka"]}, proizveden {$automobili["godiste"]} godine";
+
+
