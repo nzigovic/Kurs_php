@@ -88,3 +88,6 @@ $imena = array_keys($clanovi);
 foreach ($clanovi as $clan){
     echo $clan["Prezime"] . "<br>";
 };
+
+
+echo ("f....")
