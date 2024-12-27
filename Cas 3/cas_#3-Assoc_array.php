@@ -92,4 +92,7 @@ foreach ($clanovi as $clan){
 
 
 echo ("zdravo");
+echo ("zdravp-1");
+
+
 
