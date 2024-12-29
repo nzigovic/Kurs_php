@@ -89,5 +89,16 @@ foreach ($clanovi as $clan){
     echo $clan["Prezime"] . "<br>";
 };
 
+$trentanDatum = date("Y");
 
-echo ("f....")
+$godine = [
+
+    [
+        "godiste"=> 2003
+    ]
+    ];
+
+
+    $sve = $trentanDatum - $godine[0]["godiste"];
+
+    echo "Osoba ima $sve godina";
