@@ -99,6 +99,13 @@ $godine = [
     ];
 
 
+<<<<<<< HEAD
     $sve = $trentanDatum - $godine[0]["godiste"];
+=======
+echo ("zdravo");
+echo ("zdravp-1");
+
+
+>>>>>>> 2d9139b3ab4a80398a4879b856811846bbee30d8
 
     echo "Osoba ima $sve godina";
