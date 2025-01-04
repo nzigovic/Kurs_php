@@ -14,17 +14,7 @@ $trentanDatum = date("Y");
 
 
 
-
-
-
-
 ?>
-
-
-
-
-
-
 
 
 <!DOCTYPE html>
