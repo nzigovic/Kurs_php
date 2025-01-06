@@ -8,7 +8,7 @@ if (isset($_GET['input-box'], $_GET['operacija'])) {
 
    
 
-    // Switch za odabir operacije
+    
     switch ($operacija) {
         case 'hrana':
             $ukupno = $input_box + 150;
