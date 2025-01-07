@@ -1,0 +1,105 @@
+/* Osnovni stilovi za formu */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Stilovi za label elemente */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Stilovi za input tekstualna polja */
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Stilovi za checkbox */
+form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Stilovi za select element */
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* Stilovi za dugme */
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.result-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #eaf7ff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Naslov za rezultat */
+.result-container h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Stilovi za tekstualne elemente rezultata */
+.result-container p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Stil za vrednosti u rezultatu */
+.result-container .result-value {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.result-container .result-category {
+    font-style: italic;
+    color: #555;
+}

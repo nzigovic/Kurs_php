@@ -1,0 +1,11 @@
+Vezbe
+
+Kreiraj skriptu koja prima broj preko GET zahteva i proverava da li je broj paran ili neparan koristeći if/else strukturu.
+
+Napisi skriptu koja prima ime korisnika preko GET zahteva i prikazuje odgovarajući pozdrav na osnovu unetog imena.
+
+Kreiraj switch izjavu koja prima dan u nedelji preko GET zahteva i vraća poruku koja odgovara tom danu (npr. 'Ponedeljak - Početak radne nedelje').
+
+Napravi skriptu koja proverava tip unete vrednosti preko GET zahteva i vraća poruku da li je vrednost broj, string, ili drugi tip.
+
+Napisi skriptu koja prima dva broja preko GET zahteva i vraća njihov zbir ili poruku o grešci ako jedan od njih nije broj koristeći if/else strukturu.
