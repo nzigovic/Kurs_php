@@ -21,7 +21,7 @@ if (in_array($ime, $korisnici)){
 } 
 
 
-// var_dump($ime);
+
 
 
 ?>

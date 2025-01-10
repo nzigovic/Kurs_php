@@ -24,11 +24,11 @@ if ($prosledjeno_ime == false){
 
 
 else if ($prosledjena_lozinka == false){
-        echo "lozinka nije prosledjena";
+        echo "Lozinka nije prosledjena";
         die;
 
 }else {
-    echo "uspesno prosledjeno";
+    echo "Uspesno prosledjeno";
 }
 
 
