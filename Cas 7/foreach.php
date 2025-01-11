@@ -42,3 +42,6 @@ foreach($brojevi_svi as $broj_svi){
     $broj_svi++;
     echo $broj_svi;
 }
+ 
+
+echo $broj_svi;
