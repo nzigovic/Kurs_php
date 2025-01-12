@@ -24,6 +24,7 @@ $brojevi = [22,53,36,46,13];
 
 
 
+$brojevi_svi = [22,53,36,46,13];
 
 foreach ($brojevi as $broj){
     if ($broj % 9 === 0){
@@ -35,13 +36,23 @@ foreach ($brojevi as $broj){
 
 
 
+
+
+
+
 $brojevi_svi = [22,53,36,46,13];
 
 
-foreach($brojevi_svi as $broj_svi){
-    $broj_svi++;
-    echo $broj_svi;
-}
- 
 
-echo $broj_svi;
+$rezultat = 0;
+
+
+foreach ($brojevi_svi as $broj){
+    $ostatak =  $broj % 9;
+    if ( $ostatak == 0){
+        continue;
+    }
+    $rezultat += $broj;
+}
+
+echo $rezultat;
