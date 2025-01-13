@@ -56,3 +56,14 @@ foreach ($brojevi_svi as $broj){
 }
 
 echo $rezultat;
+
+
+
+
+$zbir_brojeva = [22,53,36,46,13];
+
+$rezultat_2 = 0;
+
+$rezultat_2 +=  array_sum($zbir_brojeva);
+
+echo $rezultat_2;
