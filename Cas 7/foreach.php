@@ -56,7 +56,7 @@ foreach ($brojevi_svi as $broj){
     $rezultat += $broj;
 }
 
-echo $rezultat;
+//echo $rezultat;
 
 
 
@@ -67,6 +67,20 @@ $rezultat_2 = 0;
 
 $rezultat_2 +=  array_sum($zbir_brojeva);
 
-echo $rezultat_2;
+//echo $rezultat_2;
 
-echo $rezultat;
+
+
+
+//// vezba
+
+for ($i = 0; $i < 10000; $i++){
+//    echo " $i" ;
+
+    if ($i % 5 === 0 ){
+        continue;
+
+
+    }
+        echo " $i" ;
+}
