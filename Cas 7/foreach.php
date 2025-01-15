@@ -74,7 +74,7 @@ $rezultat_2 +=  array_sum($zbir_brojeva);
 
 //// vezba
 
-for ($i = 0; $i < 10000; $i++){
+for ($i = 0; $i < 50; $i++){
 //    echo " $i" ;
 
     if ($i % 5 === 0 ){
@@ -84,3 +84,13 @@ for ($i = 0; $i < 10000; $i++){
     }
         echo " $i" ;
 }
+
+
+$godine = 0;
+
+while ($godine < 18){
+    echo " $godine";
+    $godine++;
+};
+
+
