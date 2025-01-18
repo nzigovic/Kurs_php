@@ -31,4 +31,6 @@ $automobili = [
 
 ];
 
+echo $automobili["Zastava"]["model"];
+
 
