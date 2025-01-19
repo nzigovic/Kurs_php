@@ -47,7 +47,7 @@ foreach ($automobili as $marka => $auto) {
     }
 
 
-}
+};
 
 
 
