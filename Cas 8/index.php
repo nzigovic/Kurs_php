@@ -66,4 +66,4 @@ foreach ($automobili  as $model => $auto  ) {
 
 
 
-
+echo "Ovo je kraj";
