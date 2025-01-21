@@ -66,4 +66,27 @@ foreach ($automobili  as $model => $auto  ) {
 
 
 
-echo "Ovo je kraj";
+$marke_auta = [
+    "Audi", "BMW", "Toyota", "Renault"
+];
+
+$imena_auta = array_map('strtolower', $marke_auta);
+
+
+var_dump($imena_auta);
+
+
+$brojevi = [
+    2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+];
+
+
+foreach ($brojevi as $broj){
+    $broj = $broj * $broj;
+    echo $broj . "<br>";
+    }
+
+
+//var_dump($brojevi);
+
+
