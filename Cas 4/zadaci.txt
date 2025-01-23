@@ -1,0 +1,6 @@
+
+Napraviti varijablu "date" i u njega upisati trenutnu godinu, napraviti proveru koja proverava ako je godina veca od 2000 napisati "Gen X", a ako je pre 2000 onda neka ispise "Nije Gen Z"
+
+Kreiraj if izjavu koja vraća naziv dana u nedelji na osnovu unetog broja od 1 do 7.
+
+Kreiraj funkciju koja proverava da li je uneti broj pozitivan, negativan ili nula koristeći if/else strukturu.
