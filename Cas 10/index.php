@@ -10,6 +10,6 @@
    $pomnozeniBrojevi= pomnoziDvaBroja(6,6);
 
    echo $pomnozeniBrojevi;
-
+$wsadawsd =[];
 
    echo "21313";
