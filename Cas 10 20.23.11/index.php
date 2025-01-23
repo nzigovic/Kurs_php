@@ -35,26 +35,3 @@ function izracunajPopust($cena, $popust)
     return $iznosPopusta;
 }
 
-$izracunajPopust = izracunajPopust(1500, 10);
-//    echo $izracunajPopust;
-
-
-function kalkulatorPopusta($cena2, $popust2)
-{
-
-
-    return $cena2 * $popust2 / 100;
-
-}
-
-;
-$popusti = [];
-
-$brojevi = [250, 330, 1000, 2000, 5000];
-
-foreach ($brojevi as $broj) {
-    $popusti = kalkulatorPopusta($broj);
-    array_push($popusti, $popusti)f
-    }
-
-echo "test";
