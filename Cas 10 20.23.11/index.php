@@ -12,7 +12,7 @@
    echo $pomnozeniBrojevi;
 
 
-function pomnoziDvaBroja($broj1, $broj2)
+function pomnoziDvaBrojaa($broj1, $broj2)
 {
     $rezultat = $broj1 * $broj2;
     return $rezultat;
