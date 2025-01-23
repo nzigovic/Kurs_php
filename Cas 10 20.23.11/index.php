@@ -56,3 +56,5 @@ foreach ($brojevi as $broj) {
     $popusti = kalkulatorPopusta($broj);
     array_push($popusti, $popusti)f
     }
+
+echo "test";
