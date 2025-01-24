@@ -25,3 +25,21 @@ $ukuonoPopusta_dva = 0;
 
 $ukuonoPopusta = array_sum($popustisvi);
 echo "ukuono ima $ukuonoPopusta din popusta";
+
+
+
+function kalkulatorKamate ($kamata, $godina){
+
+
+    if ($godina < 2020){
+        $kamate = $kamata * 0.14;
+        return $kamate;
+    }
+    else if ($godina >= 2000 && $godina < 2010){
+        $kamate = $kamata * 0.12;
+        return $kamate;
+    }
+
+};
+
+echo kalkulatorKamate(5000);
