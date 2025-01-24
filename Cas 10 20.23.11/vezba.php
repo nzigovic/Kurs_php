@@ -42,4 +42,4 @@ function kalkulatorKamate ($kamata, $godina){
 
 };
 
-echo kalkulatorKamate(5000);
+echo kalkulatorKamate(5000 , 2020);
