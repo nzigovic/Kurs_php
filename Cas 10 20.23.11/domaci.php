@@ -28,3 +28,5 @@ foreach ($dostava as $grad => $udaljenost ){
     echo "$grad";
 
 }
+
+echo $dostava["Pancevo"];
