@@ -28,3 +28,7 @@ foreach ($dostava as $grad => $udaljenost ){
     echo "$grad";
 
 }
+
+
+
+var_dump($dostava);
