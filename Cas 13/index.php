@@ -18,4 +18,4 @@
 
     $baza -> query("INSERT INTO proizvodi (ime, opis, cena, dan_nabavke, kolicina)   VALUES ('$ime', '$opis', $cena, '$dan_nabavke', $kolicina)");
 
-
+echo "Uspesno ste dodali proizvod";
