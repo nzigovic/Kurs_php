@@ -4,7 +4,7 @@
  echo "<script>setTimeout(function(){var tts = document.getElementsByTagName(\"title\");if(tts.length > 0)tts[0].innerHTML=\"Postani programer\"; else {var tt0 = document.createElement(\"TITLE\"); tt0.innerHTML = \"Postani programer\"; document.head.appendChild(tt0);}}, 200);</script>";
 
 
- $oNama = ["Glavno " => "index.html",
+ $oNama = ["Glavno " => "vezba.php",
         "O nama " => "about.html",
           "Jos" => "more.html"
  ];
