@@ -7,6 +7,11 @@ if (mysqli_connect_error()) {
 };
 
 
+if(!isset($_POST['ime'])){
+    die("Ne moze da se prosledi ");
+};
+var_dump($_POST);
+
 $imeProizvoda = $_POST['ime'];
 $opis = $_POST['opis'];
 $cena = $_POST['cena'];
