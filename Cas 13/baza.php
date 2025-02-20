@@ -25,6 +25,6 @@ $baza -> query("INSERT INTO proizvodi (ime, opis, cena, dan_nabavke, kolicina)  
 //} else {
 //    echo "Greška: " . $baza->error;
 //}
-
+//echo "kraj proizvod je uspesno dodan";
 
 
