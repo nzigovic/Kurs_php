@@ -23,6 +23,9 @@ if (mysqli_connect_error()) {
 <body>
 <input type=" ">
 
+
+
+
 </body>
 </html>
 
