@@ -1,14 +1,12 @@
 <?php
 
+require_once "baza.php";
 
-$baza = mysqli_connect("localhost", "root", "", "web_shop");
+$rezultat= $baza -> query ("SELECT * FROM `korisnici`");
 
-if (mysqli_connect_error()) {
-    die ("Ne mozemo da se povezemo");
-};
-
-
-
+if ($rezultat->num_rows > 0) {
+echo "Ukupno smo nasli korisnika "  .$rezultat ->num_rows;
+    };
 
 ?>
 
@@ -21,7 +19,8 @@ if (mysqli_connect_error()) {
     <title>Document</title>
 </head>
 <body>
-<input type=" ">
+
+
 
 
 
