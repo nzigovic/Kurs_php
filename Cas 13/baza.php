@@ -27,3 +27,5 @@ $rezultat = $baza -> query("INSERT INTO proizvodi (ime, opis, cena, dan_nabavke,
 //    echo "Greška: " . $baza->error;
 //}
 
+
+
