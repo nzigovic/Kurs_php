@@ -8,7 +8,9 @@ if ($rezultat->num_rows > 0) {
 echo "Ukupno smo nasli korisnika "  .$rezultat ->num_rows;
 
     $korisnici= $rezultat -> fetch_all(MYSQLI_ASSOC);
-    var_dump($korisnici);
+    foreach ($korisnici as $korisnik) {
+        echo $korisnik['email'];
+    }
 
     }else {
     echo "nismo nasli ni jednog korisnika";
