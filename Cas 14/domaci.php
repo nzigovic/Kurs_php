@@ -3,12 +3,11 @@
 require_once "baza.php";
 
 
-    $email= $_POST["email"];
-    $sifra= $_POST["sifra"];
 
+    if(!isset($_POST['email'])) {
 
+    die("Niste uneli Email!");
 
-
-
+    };
 
 
