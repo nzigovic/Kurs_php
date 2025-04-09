@@ -20,7 +20,10 @@
 
 
     $email = $_POST['email'];
-    $password = $_POST['sifra'];
+
+    $password = password_hash($_POST['sifra'], PASSWORD_BCRYPT);
+    var_dump($password); exit();
+
 
 
     require_once "baza.php";
