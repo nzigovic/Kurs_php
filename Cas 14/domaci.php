@@ -30,3 +30,7 @@
 
 
     $baza->query("INSERT INTO korisnici (email, sifra) VALUES ('$email', '$password')");
+
+
+
+    echo "test";
