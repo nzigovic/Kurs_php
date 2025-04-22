@@ -12,13 +12,16 @@
     $provera->store_result();
 
     if ($provera-> num_rows > 0) {
-    echo "Nasli smo korisnika u bazi";
+    echo "Nasli smo korisnika u bazi!";
         $provera->close();
         $baza->close();
     exit;
 
 
     }  else {
-      echo "Nema korisnika!";}
+      echo "Korisnik nije pronadjen!";}
 
     $provera ->close();
+
+
+    
