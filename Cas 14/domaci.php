@@ -23,7 +23,7 @@
         echo "Već ste registrovani sa ovim emailom!";
         $provera->close();
         $baza->close();
-        exit();z``
+        exit();
     }
     $provera->close();
 
