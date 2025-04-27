@@ -27,6 +27,7 @@
 
 function ProverIKorisnikaSaSlovom($baza)
 {
-echo "test";
+
+    if
 
 }
