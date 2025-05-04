@@ -25,13 +25,24 @@
 
 
 
-function ProverIKorisnikaSaSlovom($baza)
+function ProverIKorisnikaSaSlovom($baza, $domen)
 {
 
+    $upit = $pdo->prepare("SELECT COUNT (*) FROM korisnici WHERE email LIKE ? ");
+    $pattent = "%". $domen;
+    $upit->bind_param("s", $pattern);
+    $upit->execute();
+    $upit->bind_result($broj);
+    $upit->fetch();
+    $upit->close();
 
 
-    if ($baza->isKorisnik()) {
-        
-    }
+    return $broj > 0;
+};
 
+if (ProverIKorisnikaSaSlovom($baza , '@gmail.com')
+
+{
 }
+
+)
