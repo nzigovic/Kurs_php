@@ -28,6 +28,10 @@
 function ProverIKorisnikaSaSlovom($baza)
 {
 
-    if
+
+
+    if ($baza->isKorisnik()) {
+        
+    }
 
 }
