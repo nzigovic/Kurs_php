@@ -96,5 +96,5 @@ function DajKorisnikeSaDomenom($baza, $domen) {
     return $korisnici;
 }
 
-$korisnici = DajKorisnikeSaDomenom($baza, '@gmail.com');
+$korisnici = DajKorisnikeSaDomenom($baza, '@hotmail.com');
 
