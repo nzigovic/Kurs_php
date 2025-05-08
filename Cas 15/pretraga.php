@@ -77,7 +77,7 @@ if (count($korisnici) > 0) {
 }*/
 
 
-
+/*
 function DajKorisnikeSaDomenom($baza, $domen) {
     $upit = $baza->prepare("SELECT * FROM korisnici WHERE email LIKE ?");
     $pattern = "%" . $domen;
@@ -98,3 +98,4 @@ function DajKorisnikeSaDomenom($baza, $domen) {
 
 $korisnici = DajKorisnikeSaDomenom($baza, '@hotmail.com');
 
+ */
