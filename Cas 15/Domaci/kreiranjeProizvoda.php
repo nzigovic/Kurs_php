@@ -14,7 +14,7 @@
     <input type="text" name="slika" placeholder="slika">
     <input type="text" name="kolicina" placeholder="kolicina">
 
-    <button>Proveri ima li ?</button>
+    <button>Proveri ima li ??</button>
 </form>
 </body>
 </html>
