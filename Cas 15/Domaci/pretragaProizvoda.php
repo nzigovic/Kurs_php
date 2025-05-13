@@ -8,10 +8,10 @@
 <body>
 
 
-    <from action="produktSearch.php" method="GET">
+    <form action="produktSearch.php" method="GET">
         <input type="text" name="ime" placeholder="Pretrazi">
         <button>Pretrazi</button>
-    </from>
+    </form>
 
 
 </body>
