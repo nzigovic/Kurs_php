@@ -47,3 +47,5 @@ require_once "baza.php";
 
 $q = "INSERT INTO proizvodi (ime_proizvoda, opis, cena, slika, kolicina)  VALUES ('$ime', '$opis', '$cena', '$slika', '$kolicina')";
         $baza->query($q);
+
+
