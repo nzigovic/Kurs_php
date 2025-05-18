@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #222;
+}
+
+h3 {
+    font-size: 20px;
+    color: #444;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+.na-stanju {
+    color: green;
+    font-weight: bold;
+}
+
+p:not(.na-stanju) {
+    color: red;
+    font-weight: bold;
+}
