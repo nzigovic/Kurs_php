@@ -29,3 +29,34 @@ p:not(.na-stanju) {
     color: red;
     font-weight: bold;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.poruka {
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.uspeh {
+    background-color: #e6ffed;
+    color: green;
+    border-left: 5px solid green;
+}
+
+.greska {
+    background-color: #ffe6e6;
+    color: red;
+    border-left: 5px solid red;
+}
