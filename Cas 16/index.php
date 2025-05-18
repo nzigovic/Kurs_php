@@ -25,10 +25,14 @@
         <h2><?= $proizvod['ime_proizvoda'] ?></h2>
         <p><?= $proizvod['opis'] ?></p>
         <p class="cena">Cena: <?= $proizvod['cena'] ?> €</p>
-       <? if((int) $proizvod['kolicina']  ): ?>
-        <p class="na-stanju">Ima na stanju (<?= $proizvod['kolicina'] ?> komada)</p>
-        <? else: ?>
-        <p>Nema na stanju </p>
+        <?php if ((int) $proizvod['kolicina']): ?>
+            <p class="na-stanju">Ima na stanju (<?= $proizvod['kolicina'] ?> komada)</p>
+        <?php else: ?>
+            <p>Nema na stanju</p>
+        <?php endif; ?>
+
+
+        <a href="modeli/proizvod.php?id=<?=$proizvod['id'] ?>">Pogledaj proizvod</a>
     </div>
 <?php endforeach; ?>
 </body>

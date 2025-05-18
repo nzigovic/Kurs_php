@@ -35,7 +35,7 @@ if (isset($_GET['input-box'], $_GET['operacija'])) {
 
 /// ovo treba Toma da objasni kada se koristi a kada ne ternarni operator prednosti/mane ///
 
-$prikazana_cena = isset($sve_sracunato) ? $sve_sracunato : (isset($ukupno) ? $ukupno: "cena nije dostupna");    //ternarni operator (ternary operator) ili uslovni operator (conditional operator)
+$prikazana_cena = $sve_sracunato ?? ($ukupno ?? "cena nije dostupna");    //ternarni operator (ternary operator) ili uslovni operator (conditional operator)
 
 
 // if (isset($sve_sracunato)) {
