@@ -1,4 +1,5 @@
 <?php
+
 $poruka = "";
 
 if (!isset($_POST["email"]) || empty($_POST["email"])) {
@@ -15,16 +16,24 @@ if (!isset($_POST["email"]) || empty($_POST["email"])) {
 
     if ($rezultat->num_rows == 1) {
         $korisnik = $rezultat->fetch_assoc();
-        $poruka = "Dobro došli, Admine!";
+        $hashIzBaze = $korisnik['sifra'];
+
+        if (password_verify($sifra, $hashIzBaze)) {
+            $poruka = "Dobro došli, Admine!";
+        } else {
+            $poruka = "Pogrešna lozinka!";
+        }
     } else {
         $poruka = "Korisnik ne postoji";
     }
 }
-
-
-
-
 ?>
+
+
+
+
+
+
 
 <!doctype html>
 <html lang="en">
