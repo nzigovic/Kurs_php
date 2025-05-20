@@ -33,4 +33,3 @@
         exit();
     }
     $provera -> close();
-    eecho";ws"adasdas
