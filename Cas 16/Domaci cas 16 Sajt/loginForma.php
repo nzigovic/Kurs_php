@@ -33,4 +33,4 @@
         exit();
     }
     $provera -> close();
-    eecho;
+    eecho;w
