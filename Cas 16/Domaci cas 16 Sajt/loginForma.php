@@ -1,36 +1,35 @@
 <?php
+if (!isset($_POST["email"]) || empty($_POST["email"])) {
+    die("Polje email nije popunjeno");
+}
 
+if (!isset($_POST["sifra"]) || empty($_POST["sifra"])) {
+    die("Polje šifra nije popunjeno");
+}
 
-    if (!isset($_POST["email"])  || empty($_POST["email"])){
+require_once "baza.php";
 
-        die("Polje email nije popunjeno");
+$email = $_POST['email'];
+$sifra = $_POST['sifra'];
+
+$provera = $baza->prepare("SELECT sifra FROM korisnici WHERE email = ?");
+$provera->bind_param("s", $email);
+$provera->execute();
+$rezultat = $provera->get_result();
+
+if ($rezultat->num_rows === 1) {
+    $korisnik = $rezultat->fetch_assoc();
+    $hashIzBaze = $korisnik['sifra'];
+
+    if (password_verify($sifra, $hashIzBaze)) {
+        echo "Dobrodošli!";
+    } else {
+        echo "Pogrešna lozinka.";
     }
+} else {
+    echo "Korisnik ne postoji.";
+}
 
-    if (!isset($_POST["sifra"])  || empty($_POST["sifra"])){
+$provera->close();
+$baza->close();
 
-        die("Polje sifra nije popunjeno");
-    }
-
-
-    require_once "baza.php";
-
-    $email =  $_POST['email'];
-    $password = password_hash($_POST['sifra'], PASSWORD_DEFAULT);
-
-
-
-    $provera = $baza -> prepare("select id from korisnici where email = ?");
-
-    $provera -> bind_param( "s", $email);
-    $provera -> execute();
-    $provera -> store_result();
-
-
-    if($provera ->num_rows > 0){
-        echo "korisnik postoji";
-        $provera -> close();
-        $baza -> close();
-        exit();
-    }
-    $provera -> close();
-    echo "test";
