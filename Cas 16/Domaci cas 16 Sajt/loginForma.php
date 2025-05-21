@@ -33,3 +33,4 @@
         exit();
     }
     $provera -> close();
+    echo "test";
