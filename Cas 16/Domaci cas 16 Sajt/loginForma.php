@@ -27,7 +27,7 @@ if ($rezultat->num_rows === 1) {
         echo "Pogrešna lozinka.";
     }
 } else {
-    echo "Korisnik ne postoji.";
+    echo "Korisnik ne postoji..";
 }
 
 $provera->close();
