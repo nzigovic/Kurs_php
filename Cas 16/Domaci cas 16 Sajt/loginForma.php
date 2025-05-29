@@ -48,6 +48,6 @@ $baza->close();
     <title>Document</title>
 </head>
 <body>
-     <H1>AA</H1>
+    
 </body>
 </html>

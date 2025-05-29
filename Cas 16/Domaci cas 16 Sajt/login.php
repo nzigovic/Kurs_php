@@ -24,7 +24,7 @@
         <input type="password" name="sifra" placeholder="Unesite vašu lozinku" >
         <button type="submit">Uloguj me</button>
 
-        <h4>Ulogujte se kao <a href="#">User</a> </h4>
+        <h4>  <a href="registracija.php">Registujte se</a> </h4>
     </form>
 </div>
 </body>
