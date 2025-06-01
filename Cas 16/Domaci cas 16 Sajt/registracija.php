@@ -1,9 +1,9 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["email"]) || empty($_POST["sifra"])) {
         die("Sva polja moraju biti popunjena!");
     }
-
     require_once "baza.php";
 
     $email = $_POST['email'];
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="password" name="sifra" placeholder="Unesite vašu lozinku">
         <button type="submit">Registruj me</button>
 
-        <h4><a href="login.php">Već imate nalog? Ulogujte se</a></h4>
+        <h4><a href="login.php">Već imate nalog? Ulogujte se</a>#</h4>
     </form>
 </div>
 </body>
