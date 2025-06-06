@@ -1,5 +1,8 @@
 <?php
 
+    error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
    if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["email"]) || empty($_POST["sifra"])) {
         die("Sva polja moraju biti popunjena!");
@@ -25,7 +28,7 @@
     $unos->bind_param("ss", $email, $sifra);
 
     if ($unos->execute()) {
-        echo "Uspešna registracija!";
+        echo "Registracija uspesna ulogujte se sada";
     } else {
         echo "Greška pri registraciji!";
     }
@@ -44,13 +47,13 @@
 </head>
 <body>
 <div class="login-container">
-    <form action="registracijaForma.php" method="post" class="login-form">
+    <form action="registracija.php" method="post" class="login-form">
         <h2>Registracija</h2>
         <input type="email" name="email" placeholder="Unesite vaš email">
         <input type="password" name="sifra" placeholder="Unesite vašu lozinku">
         <button type="submit">Registruj me</button>
 
-        <h4><a href="login.php">Već imate nalog? Ulogujte se</a>#</h4>
+        <h4><a href="login.php">Već imate nalog? Ulogujte se</a>      </h4>
     </form>
 </div>
 </body>

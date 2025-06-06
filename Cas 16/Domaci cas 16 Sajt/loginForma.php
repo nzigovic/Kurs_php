@@ -22,7 +22,8 @@ if ($rezultat->num_rows === 1) {
     $hashIzBaze = $korisnik['sifra'];
 
     if (password_verify($sifra, $hashIzBaze)) {
-        echo "Dobrodošli!";
+       header("Location: proizvodi.php");
+        exit();
     } else {
         echo "Pogrešna lozinka.";
     }
