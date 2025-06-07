@@ -25,7 +25,7 @@ if ($rezultat->num_rows === 1) {
        header("Location: proizvodi.php");
         exit();
     } else {
-        echo "Pogrešna lozinka.";
+        echo "Pogrešna lozinka..";
     }
 } else {
     echo "Korisnik ne postoji..";
