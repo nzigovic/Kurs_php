@@ -8,7 +8,7 @@
 <body>
        <form action="logika.php" method = "post">
         <input type="text" name= "ime">
-        <button>Zapamti me</button> 
+        <button>Zapamti me!</button> 
        </form>
 
 </body>
