@@ -12,6 +12,12 @@ if (!isset ($ime) ||     empty ($ime)){
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
-    die("pokrenuto");
+   
 }
 
+$_SESSION ["ime"] = $ime;
+
+header("Location: prikaz.php");
+
+
+?>
