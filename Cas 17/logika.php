@@ -9,3 +9,9 @@ if (!isset ($ime) ||     empty ($ime)){
     
 };
 
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+    die("pokrenuto");
+}
+
