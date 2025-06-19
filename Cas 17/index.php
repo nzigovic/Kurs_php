@@ -21,11 +21,14 @@ if (session_status() === PHP_SESSION_NONE) {
 </head>
 <body>
     
-      <?php 
-                if (isset($_SESSION['ime'])){
-                    echo "pozz". $_SESSION['ime'];
-                }
-      ?>
+      <?php if (isset($_SESSION['ime']) ):  ?>
+        <p> Pozdrav <?= $_SESSION['ime']?></p>
+            <form method="post" action="prekoni.php">
+        <button type="submit" name="logout">Logout</button>
+    </form>
+
+        <?php else: ?>
+
 
 
        <form action="logika.php" method = "post">
@@ -34,6 +37,6 @@ if (session_status() === PHP_SESSION_NONE) {
        </form>
 
        
-
+            <?php endif; ?>
 </body>
 </html>

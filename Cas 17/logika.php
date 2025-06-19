@@ -17,7 +17,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 $_SESSION ["ime"] = $ime;
 
-header("Location: prikaz.php");
+// header("Location: prikaz.php");
 
 
 ?>
