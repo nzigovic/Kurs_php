@@ -1,3 +1,17 @@
+<?php
+
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+   
+}
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +20,14 @@
     <title>Document</title>
 </head>
 <body>
+    
+      <?php 
+                if (isset($_SESSION['ime'])){
+                    echo "pozz". $_SESSION['ime'];
+                }
+      ?>
+
+
        <form action="logika.php" method = "post">
         <input type="text" name= "ime">
         <button>Zapamti me!</button> 
